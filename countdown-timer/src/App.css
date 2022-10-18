@@ -1,5 +1,16 @@
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .App {
   text-align: center;
+  margin: auto;
+  background: lightblue;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 .App-logo {
@@ -25,9 +36,31 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #61dafb;;
+}
+.blink {
+  color: red;
+  animation: blink 1s linear infinite;
+  margin: 0px !important;
+}
+.timeText {
+  margin: 0px !important;
+}
+.buttonIcon {
+  font-size: 3.1875rem !important;
 }
 
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 2;
+  }
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
